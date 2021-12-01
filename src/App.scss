@@ -1,3 +1,14 @@
+.toplevel_page_tws #wpcontent {
+	padding-left: 0;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	img {
+	  border-width: 0;
+	}
+}
+

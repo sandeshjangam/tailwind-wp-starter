@@ -17,5 +17,6 @@ define( 'TWS_BASE', plugin_basename( TWS_FILE ) );
 define( 'TWS_DIR', plugin_dir_path( TWS_FILE ) );
 define( 'TWS_URL', plugins_url( '/', TWS_FILE ) );
 define( 'TWS_VER', '0.0.1' );
+define( 'TWS_PREFIX', 'tws' );
 
 require_once 'plugin-loader.php';

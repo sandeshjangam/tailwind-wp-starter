@@ -8,6 +8,8 @@
 
 namespace TWS;
 
+use TWS\Inc\Admin_Menu;
+
 /**
  * Plugin_Loader
  *
@@ -73,6 +75,10 @@ class Plugin_Loader {
 	public function __construct() {
 
 		spl_autoload_register( [ $this, 'autoload' ] );
+
+		if ( is_admin() ) {
+			Admin_Menu::get_instance();
+		}
 	}
 }
 

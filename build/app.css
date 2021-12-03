@@ -583,6 +583,11 @@ img{
   border-width:0
 }
 
+a:focus{
+  outline:none;
+  box-shadow:none
+}
+
 .container{
   width:100%
 }
